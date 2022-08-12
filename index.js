@@ -49,7 +49,7 @@ Do the following:
 const firstThing = 1
 const secondThing = 2
   if (firstThing === secondThing) {
-    return (true);
+    console.log(true);
   }
   else {
     console.log(firstThing)
