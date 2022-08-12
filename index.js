@@ -19,8 +19,21 @@ Do the following:
 
    HINT: no function required
 */
-
-
+const votingAge = 18
+// function checkAge () {
+//   if (votingAge >= 18) {
+//     console.log('true');
+//   } else {
+//     console.log('false');
+//   }
+// }
+// checkAge();
+  if (votingAge >= 18) {
+    console.log(true);
+  }
+  else {
+    console.log(false);
+  }
 
 /*
 Task 1b - Values (not auto tested)
@@ -33,7 +46,14 @@ Do the following:
 
    HINT: no function required
 */
-
+const firstThing = 1
+const secondThing = 2
+  if (firstThing === secondThing) {
+    return (true);
+  }
+  else {
+    console.log(firstThing)
+  }
 
 
 
@@ -48,7 +68,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let year = "1999"
+console.log(Number (year))
 
 
 
@@ -61,10 +82,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
+function multiply(a,b){
+  return a * b;
 }
-
+console.log(multiply(2,3))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -77,11 +98,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7
 }
 
-
+console.log(dogYears(7))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
