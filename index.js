@@ -157,19 +157,28 @@ function hungryDog(age, weight){
     foodAmount = weight * .05;
   }
   else if (weight <= 10){
-    foodAmount = weight * .04
+    foodAmount = weight * .04;
   }
   else if (weight <= 15){
-    foodAmount = weight * .03
+    foodAmount = weight * .03;
   }
   else {
-    foodAmount = weight * .02
+    foodAmount = weight * .02;
   }
  }
-return foodAmount
-
+else if (age < 1) {
+  if (age <= .33) {
+    foodAmount = weight * .10;
+  }
+  else if (age <=.5833) {
+    foodAmount = weight * .05;
+  }
+  else if (age < 1) {
+    foodAmount = weight * .04;
+  }
 }
-console.log(hungryDog(1, 16))
+
+return foodAmount;
 
 
 
