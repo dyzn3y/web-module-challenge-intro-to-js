@@ -264,11 +264,11 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(number){
-      for(let i = number; i > 0; i --){
-        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
-      }
+  for(let i = number; i > 0; i --){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`;
+    }
 }
-console.log('Task 6:', annoyingSong(8))
+console.log('Task 6:', annoyingSong(3))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -285,10 +285,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if (score >=90){
+  return 'you got an A';
+}else if (score < 90 && score >= 80){
+  return 'you got a B';
+}else if (score < 80 && score >= 70){
+  return 'you got a C';
+}else if (score < 70 && score >= 60){
+  return 'you got a D';
+}else {
+  return 'you got an F';
 }
-
+}
+console.log('Task 7:', grade(75));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
