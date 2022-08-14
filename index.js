@@ -198,7 +198,7 @@ if (computer <= 0.34){
 function game(user, computer){
   if(user === computer){
     return `it's a tie`;
-  }else if (user === 'rock' && computer === 'paper'){
+  }else if (user === 'rock' && computer === 'scissors'){
     return 'you win!';
   }else if (user === 'paper' && computer === 'rock'){
     return 'you win!';
@@ -210,8 +210,12 @@ function game(user, computer){
     return 'you lose!';
   }else if (user === 'rock' && computer === 'paper'){
     return 'you lose!';
+  }else if (user === '' && computer === ''){
+    return 'you lose!';
   }
-}console.log('Task 4:',game('paper',computer))
+}
+
+console.log('Task 4:',game('paper',computer))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
