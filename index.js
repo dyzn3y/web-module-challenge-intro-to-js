@@ -314,11 +314,19 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(string) {
+  const vowels = ['A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u'];
+  const array = string.split('');
+  let count = 0;
+  for (let i = 0; i < array.length; i ++) {
+    if (array[i] === vowels.find(element => element === array[i])) {
+      count += 1
+    }
+  }
+  return count;
 }
 
-
+console.log('Stretch', vowelCounter('Hello, World!'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
